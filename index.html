@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Xem Hoạt Hình Trực Tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>ToonStream</h1>
+        </div>
+        <nav class="head-link">
+            <ul>
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li><a href="#">Mới cập nhật</a></li>
+                <li><a href="#">Xem nhiều nhất</a></li>
+                <li><a href="#">Thể loại</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="content-container">
+        <!-- Left Content: Danh sách video -->
+        <aside class="left-content">
+            <h3>Danh sách phim</h3>
+            <ul class="video-list">
+                <li onclick="changeVideo('https://www.youtube.com/embed/dQw4w9WgXcQ', 'Tập 1: Cuộc phiêu lưu kỳ thú', 'Phim hoạt hình thuyết minh tiếng Việt chất lượng cao.')">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=100&q=80" alt="Thumbnail">
+                    <div>
+                        <h4>Hoạt Hình 1</h4>
+                        <p>Tập 1 - Thuyết minh</p>
+                    </div>
+                </li>
+                <li onclick="changeVideo('https://www.youtube.com/embed/3JZ_D3ELwOQ', 'Tập 2: Vùng đất linh hồn', 'Khám phá thế giới thần bí cùng nhân vật chính.')">
+                    <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=100&q=80" alt="Thumbnail">
+                    <div>
+                        <h4>Hoạt Hình 2</h4>
+                        <p>Tập 2 - Thuyết minh</p>
+                    </div>
+                </li>
+                <li onclick="changeVideo('https://www.youtube.com/embed/tgbNymZ7vqY', 'Tập 3: Kỷ băng hà vui nhộn', 'Những phút giây giải trí thư giãn tuyệt vời.')">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=100&q=80" alt="Thumbnail">
+                    <div>
+                        <h4>Hoạt Hình 3</h4>
+                        <p>Tập 3 - Thuyết minh</p>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực phát video -->
+        <main class="right-content">
+            <div class="video-player-box">
+                <!-- Nhúng video YouTube bằng iframe -->
+                <iframe id="main-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Player" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 id="video-title">Tập 1: Cuộc phiêu lưu kỳ thú</h2>
+                <p id="video-desc">Phim hoạt hình thuyết minh tiếng Việt chất lượng cao.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ToonStream - Trang web xem hoạt hình trực tuyến không quảng cáo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
